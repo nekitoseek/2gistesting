@@ -5,7 +5,7 @@ Launching unittests with arguments python -m unittest discover -s /Users/nekitos
 /Users/nekitoseek/PycharmProjects/PythonProject/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
 
-Ќеверный статус код длЯ запроса с некорректным color (нижний регистр)
+РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Рј color (РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ)
 400 != 200
 
 Expected :200
@@ -14,11 +14,11 @@ Actual   :400
 
 Traceback (most recent call last):
   File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_color.py", line 38, in test_lowercase_color
-    self.assertEqual(resp.status_code, 400, "Ќеверный статус код длЯ запроса с некорректным color (нижний регистр)")
-AssertionError: 200 != 400 : Ќеверный статус код длЯ запроса с некорректным color (нижний регистр)
+    self.assertEqual(resp.status_code, 400, "РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Рј color (РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ)")
+AssertionError: 200 != 400 : РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Рј color (РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ)
 
 
-Ќеверный статус код длЯ запроса с валидными lat и lon (0, 0)
+РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РІР°Р»РёРґРЅС‹РјРё lat Рё lon (0, 0)
 200 != 500
 
 Expected :500
@@ -27,11 +27,11 @@ Actual   :200
 
 Traceback (most recent call last):
   File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_lat_and_lon.py", line 92, in test_zero_lat_lon
-    self.assertEqual(resp.status_code, 200, "Ќеверный статус код длЯ запроса с валидными lat и lon (0, 0)")
-AssertionError: 500 != 200 : Ќеверный статус код длЯ запроса с валидными lat и lon (0, 0)
+    self.assertEqual(resp.status_code, 200, "РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РІР°Р»РёРґРЅС‹РјРё lat Рё lon (0, 0)")
+AssertionError: 500 != 200 : РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РІР°Р»РёРґРЅС‹РјРё lat Рё lon (0, 0)
 
 
-Ќеверный статус код длЯ запроса с количеством символов, выходЯщих за рамки допустимого в title
+РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРёРјРІРѕР»РѕРІ, РІС‹С…РѕРґСЏС‰РёС… Р·Р° СЂР°РјРєРё РґРѕРїСѓСЃС‚РёРјРѕРіРѕ РІ title
 400 != 200
 
 Expected :200
@@ -40,11 +40,11 @@ Actual   :400
 
 Traceback (most recent call last):
   File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_title.py", line 51, in test_1000chars_title
-    self.assertEqual(resp.status_code, 400, "Ќеверный статус код длЯ запроса с количеством символов, выходЯщих за рамки допустимого в title")
-AssertionError: 200 != 400 : Ќеверный статус код длЯ запроса с количеством символов, выходЯщих за рамки допустимого в title
+    self.assertEqual(resp.status_code, 400, "РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРёРјРІРѕР»РѕРІ, РІС‹С…РѕРґСЏС‰РёС… Р·Р° СЂР°РјРєРё РґРѕРїСѓСЃС‚РёРјРѕРіРѕ РІ title")
+AssertionError: 200 != 400 : РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРёРјРІРѕР»РѕРІ, РІС‹С…РѕРґСЏС‰РёС… Р·Р° СЂР°РјРєРё РґРѕРїСѓСЃС‚РёРјРѕРіРѕ РІ title
 
 
-Ќеверный статус код длЯ запроса с просроченным токеном
+РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РїСЂРѕСЃСЂРѕС‡РµРЅРЅС‹Рј С‚РѕРєРµРЅРѕРј
 401 != 200
 
 Expected :200
@@ -53,8 +53,8 @@ Actual   :401
 
 Traceback (most recent call last):
   File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_token.py", line 16, in test_expired_token
-    self.assertEqual(resp.status_code, 401, "Ќеверный статус код длЯ запроса с просроченным токеном")
-AssertionError: 200 != 401 : Ќеверный статус код длЯ запроса с просроченным токеном
+    self.assertEqual(resp.status_code, 401, "РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РїСЂРѕСЃСЂРѕС‡РµРЅРЅС‹Рј С‚РѕРєРµРЅРѕРј")
+AssertionError: 200 != 401 : РќРµРІРµСЂРЅС‹Р№ СЃС‚Р°С‚СѓСЃ РєРѕРґ РґР»СЏ Р·Р°РїСЂРѕСЃР° СЃ РїСЂРѕСЃСЂРѕС‡РµРЅРЅС‹Рј С‚РѕРєРµРЅРѕРј
 
 
 
