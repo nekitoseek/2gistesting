@@ -1,0 +1,65 @@
+/Users/nekitoseek/PycharmProjects/PythonProject/.venv/bin/python /Applications/PyCharm.app/Contents/plugins/python-ce/helpers/pycharm/_jb_unittest_runner.py --path /Users/nekitoseek/PycharmProjects/PythonProject/tests 
+Testing started at 10:53 ...
+Launching unittests with arguments python -m unittest discover -s /Users/nekitoseek/PycharmProjects/PythonProject/tests -t /Users/nekitoseek/PycharmProjects/PythonProject/tests in /Users/nekitoseek/PycharmProjects/PythonProject/tests
+
+/Users/nekitoseek/PycharmProjects/PythonProject/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+Неверный статус код для запроса с некорректным color (нижний регистр)
+400 != 200
+
+Expected :200
+Actual   :400
+<Click to see difference>
+
+Traceback (most recent call last):
+  File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_color.py", line 38, in test_lowercase_color
+    self.assertEqual(resp.status_code, 400, "Неверный статус код для запроса с некорректным color (нижний регистр)")
+AssertionError: 200 != 400 : Неверный статус код для запроса с некорректным color (нижний регистр)
+
+
+Неверный статус код для запроса с валидными lat и lon (0, 0)
+200 != 500
+
+Expected :500
+Actual   :200
+<Click to see difference>
+
+Traceback (most recent call last):
+  File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_lat_and_lon.py", line 92, in test_zero_lat_lon
+    self.assertEqual(resp.status_code, 200, "Неверный статус код для запроса с валидными lat и lon (0, 0)")
+AssertionError: 500 != 200 : Неверный статус код для запроса с валидными lat и lon (0, 0)
+
+
+Неверный статус код для запроса с количеством символов, выходящих за рамки допустимого в title
+400 != 200
+
+Expected :200
+Actual   :400
+<Click to see difference>
+
+Traceback (most recent call last):
+  File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_title.py", line 51, in test_1000chars_title
+    self.assertEqual(resp.status_code, 400, "Неверный статус код для запроса с количеством символов, выходящих за рамки допустимого в title")
+AssertionError: 200 != 400 : Неверный статус код для запроса с количеством символов, выходящих за рамки допустимого в title
+
+
+Неверный статус код для запроса с просроченным токеном
+401 != 200
+
+Expected :200
+Actual   :401
+<Click to see difference>
+
+Traceback (most recent call last):
+  File "/Users/nekitoseek/PycharmProjects/PythonProject/tests/test_token.py", line 16, in test_expired_token
+    self.assertEqual(resp.status_code, 401, "Неверный статус код для запроса с просроченным токеном")
+AssertionError: 200 != 401 : Неверный статус код для запроса с просроченным токеном
+
+
+
+Ran 34 tests in 22.543s
+
+FAILED (failures=4)
+
+Process finished with exit code 1
